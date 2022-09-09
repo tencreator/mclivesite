@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 8px;
+    background-color: rgb(26, 29, 48);
+    color: white;
+}
+
+a {
+    color:white;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%,0%);
+    text-align: center;
+    margin: 0.5em 0em;
+}
+
+.icon-containers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+}
+
+.Container {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    width: calc(100vw - 8px);
+    height: calc(100vh - 8px);
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    padding: 0 0.5em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    position:relative;
+    width: 100px;
+    height: 100px;
+    background: rgb(46, 49, 68);
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+}
+
+.Display {
+    padding-top: 0.5em;
+    height: calc(inherit - 1em);
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.Container-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Map {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: 1px white solid;
+}

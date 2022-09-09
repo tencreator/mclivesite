@@ -82,3 +82,7 @@ footer {
     outline: none;
     border: 1px white solid;
 }
+
+@media screen and (max-height:800px) {
+    .mapLink {display: none;}
+}

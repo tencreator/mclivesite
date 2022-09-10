@@ -18,7 +18,7 @@ function App() {
             <li>
               <a className="icon-containers" href="/downloads"><img className="icon" src={Download} alt="Download" /> </a>
             </li>
-            <li>
+            <li className="mapLink">
               <a className="icon-containers" href="/map"> <img className="icon" src="https://icon-library.com/images/white-map-icon/white-map-icon-16.jpg" alt="Map" /> </a>
             </li>
           </ul>

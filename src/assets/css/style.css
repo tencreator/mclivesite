@@ -29,11 +29,20 @@ footer {
 
 .btn-container {
     transition: 250ms ease-in-out;
+    position:relative;
+    width: 100px;
+    height: 100px;
+    background: rgb(46, 49, 68);
+    border-radius: 0.5em;
+    margin: 0.5em;
 }
 
-.btn-container:hover {
-    transform:scale(1.25) translate(9%, 9%);
-    z-index: 10;
+.btn-container:hover:not(:first-child) {
+    background: rgb(36, 39, 58);
+}
+
+.no-bg {
+    background: transparent;
 }
 
 .Container {
@@ -56,12 +65,6 @@ footer {
 }
 
 .sidebar ul li {
-    position:relative;
-    width: 100px;
-    height: 100px;
-    background: rgb(46, 49, 68);
-    border-radius: 0.5em;
-    margin: 0.5em;
 }
 
 .icon {

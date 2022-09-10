@@ -81,8 +81,13 @@ footer {
     transform: translate(-50%, -50%);
     outline: none;
     border: 1px white solid;
+    background-image: url(https://gifer.com/embed/ZKZg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-height:800px) {
     .mapLink {display: none;}
 }
+

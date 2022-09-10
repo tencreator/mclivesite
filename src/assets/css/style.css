@@ -27,6 +27,15 @@ footer {
     text-decoration: none;
 }
 
+.btn-container {
+    transition: 250ms ease-in-out;
+}
+
+.btn-container:hover {
+    transform:scale(1.25) translate(9%, 9%);
+    z-index: 10;
+}
+
 .Container {
     position: absolute;
     left: 4px;
@@ -86,6 +95,8 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.center-text {text-align: center;}
 
 @media screen and (max-height:800px) {
     .mapLink {display: none;}

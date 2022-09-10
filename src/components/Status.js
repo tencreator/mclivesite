@@ -18,7 +18,7 @@ export default class Status extends React.Component {
 
     render() {
         return <div>
-            {this.state.loading ? <div>Fetching server information!</div> : <div className='center-text'> {this.state.serverInformation.online ? <div> Server is currently online!  <br/><div> {this.state.serverInformation.players.online} / {this.state.serverInformation.players.max} players currently online! <br /> MOTD : {this.state.serverInformation.motd.html} <br /> Minecraft version {this.state.serverInformation.version}  </div> </div> : <div> Server us currenly offline </div> }  </div>}
+            {this.state.loading ? <div>Fetching server information!</div> : <div className='center-text'> {this.state.serverInformation.online ? <div> Server is currently online!  <br/><div> {this.state.serverInformation.players.online} / {this.state.serverInformation.players.max} players currently online! <br /> MOTD : {this.state.serverInformation.motd.html} <br /> Minecraft version {this.state.serverInformation.version}  </div> </div> : <div> Server is currenly offline <br /> please try again in a few moments! </div> }  </div>}
         </div>
     };
 }

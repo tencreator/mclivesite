@@ -10,13 +10,13 @@ import "./assets/css/style.css";
 
 const displayWarning = true;
 
-function App() {
+export default function App() {
   return (
     <>
       <div className="Container">
         {displayWarning ?<div className="warning" id="warning">
           <strong>WARNING</strong> : The MC Live Forge server is currently under maintenance temporarily
-          <button type="button" onClick="displayWarning = false">X</button>
+          <button type="button" onClick={hideWarning}>X</button>
          </div> : null }
         <div className="sidebar">
           <ul>
@@ -56,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+function hideWarning() {document.getElementById('warning').style.display = 'none'};

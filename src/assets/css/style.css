@@ -76,7 +76,7 @@ footer {
     position: relative;
     top: 10px;
     padding-top: 0.5em;
-    /* height: calc(inherit - 2em); */
+    height: calc(inherit - 2em);
     width: inherit;
     display: flex;
     justify-content: center;

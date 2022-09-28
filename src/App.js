@@ -8,15 +8,16 @@ import Download from "./assets/imgs/download.png";
 import StatusIco from "./assets/imgs/status.png";
 import "./assets/css/style.css";
 
+Var displayWarning = true
 
 function App() {
   return (
     <>
       <div className="Container">
-        <div className="warning" id="warning">
+        {displayWarning ?<div className="warning" id="warning">
           <strong>WARNING</strong> : The MC Live Forge server is currently under maintenance temporarily
-          <button type="button" onClick="document.getElementByClass('warning').style.display = 'none'">X</button>
-         </div>
+          <button type="button" onClick="displayWarning = false">X</button>
+         </div> : null }
         <div className="sidebar">
           <ul>
             <li className="btn-container no-bg">

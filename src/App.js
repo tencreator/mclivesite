@@ -13,6 +13,9 @@ function App() {
   return (
     <>
       <div className="Container">
+        <div className="warning">
+          <strong>WARNING</strong> : The MC Live Forge server is currently under maintenance temporarily
+        </div>
         <div className="sidebar">
           <ul>
             <li className="btn-container no-bg">

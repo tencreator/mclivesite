@@ -105,3 +105,9 @@ footer {
     .mapLink {display: none;}
 }
 
+.warning {
+    width: 90%;
+    padding: 0.5em;
+    background-color: rgb(228 110 0 / 80%);
+    border: 2px solid rgb(228 110 0);
+}

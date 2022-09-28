@@ -109,10 +109,10 @@ footer {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 90%;
+    width: 80%;
     height: 15px;
     padding: 0.5em;
     background-color: rgb(228 110 0 / 80%);
     border: 2px solid rgb(228 110 0);
-    border: 1em;
+    border: 5px;
 }

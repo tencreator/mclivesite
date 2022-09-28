@@ -15,7 +15,7 @@ function App() {
       <div className="Container">
         <div className="warning">
           <strong>WARNING</strong> : The MC Live Forge server is currently under maintenance temporarily
-          <button onClick='document.getElementByClass('warning').style.display = none'>X</button>
+          <button onClick="document.getElementByClass('warning').style.display = none">X</button>
          </div>
         <div className="sidebar">
           <ul>

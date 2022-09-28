@@ -106,10 +106,13 @@ footer {
 }
 
 .warning {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
     width: 90%;
-    height: 10px;
+    height: 15px;
     padding: 0.5em;
     background-color: rgb(228 110 0 / 80%);
     border: 2px solid rgb(228 110 0);
-    border: 0.5em;
+    border: 1em;
 }

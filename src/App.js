@@ -8,7 +8,7 @@ import Download from "./assets/imgs/download.png";
 import StatusIco from "./assets/imgs/status.png";
 import "./assets/css/style.css";
 
-Var displayWarning = true
+Var displayWarning = true;
 
 function App() {
   return (

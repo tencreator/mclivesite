@@ -73,6 +73,8 @@ footer {
 }
 
 .Display {
+    position: relative;
+    top: 10px;
     padding-top: 0.5em;
     height: calc(inherit - 1em);
     width: inherit;
@@ -118,5 +120,5 @@ footer {
     border: 2px solid rgb(228 110 0);
     border-radius: 5px;
 
-    margin: 10px;
+    /* margin: 10px; */
 }

@@ -1,23 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Downloads from "./components/Downloads";
 import Information from "./components/Information";
-import Map from "./components/Map";
+import Map from "./components/Map"; // Disabled due to limitations of certain browsers!
 import Status from "./components/Status";
 import Logo from "./assets/imgs/MC Live logo.png";
 import Download from "./assets/imgs/download.png";
 import StatusIco from "./assets/imgs/status.png";
 import "./assets/css/style.css";
 
-const displayWarning = true;
-
 export default function App() {
   return (
     <>
       <div className="Container">
-        {displayWarning ?<div className="warning" id="warning">
-          <strong>WARNING</strong> : The MC Live Forge server is currently under maintenance temporarily
-          <button type="button" onClick={hideWarning}>X</button>
-         </div> : null }
         <div className="sidebar">
           <ul>
             <li className="btn-container no-bg">
@@ -29,9 +23,9 @@ export default function App() {
             <li className="btn-container">
               <a className="icon-containers" href="/downloads"><img className="icon" src={Download} alt="Download" /> </a>
             </li>
-            <li className="mapLink btn-container">
+            {/* <li className="mapLink btn-container">
               <a className="icon-containers" href="/map"> <img className="icon" src="https://icon-library.com/images/white-map-icon/white-map-icon-16.jpg" alt="Map" /> </a>
-            </li>
+            </li> */}
             <li className="btn-container">
               <a className="icon-containers" href="/status"> <img className="icon" src={StatusIco} alt="Status" /> </a>
             </li>
@@ -42,8 +36,9 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Information />} />
               <Route path="/downloads" element={<Downloads />} />
-              <Route path="/map" element={<Map />} />
+              {/* <Route path="/map" element={<Map />} /> */}
               <Route path="/status" element={<Status />} />
+              <Route path="*" element={<Error />} />
             </Routes>
           </Router>
         </div>
@@ -55,5 +50,3 @@ export default function App() {
     </>
   );
 }
-
-function hideWarning() {document.getElementById('warning').style.display = 'none'};

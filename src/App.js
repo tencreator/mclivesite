@@ -3,6 +3,7 @@ import Downloads from "./components/Downloads";
 import Information from "./components/Information";
 import Map from "./components/Map"; // Disabled due to limitations of certain browsers!
 import Status from "./components/Status";
+import Error from "./components/Error";
 import Logo from "./assets/imgs/MC Live logo.png";
 import Download from "./assets/imgs/download.png";
 import StatusIco from "./assets/imgs/status.png";

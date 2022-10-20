@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Downloads from "./components/Downloads";
 import Information from "./components/Information";
-import Map from "./components/Map"; // Disabled due to limitations of certain browsers!
+import Map from "./components/Map";
 import Status from "./components/Status";
 import Error from "./components/Error";
 import Logo from "./assets/imgs/MC Live logo.png";
@@ -9,7 +9,8 @@ import Download from "./assets/imgs/download.png";
 import StatusIco from "./assets/imgs/status.png";
 import "./assets/css/style.css";
 
-export default function App() {
+
+function App() {
   return (
     <>
       <div className="Container">
@@ -22,13 +23,13 @@ export default function App() {
               <a className="icon-containers" href="/"> <img className="icon" src="https://icon-library.com/images/information-icon-white/information-icon-white-6.jpg" alt="Info" /></a>
             </li>
             <li className="btn-container">
-              <a className="icon-containers" href="/downloads"><img className="icon" src={Download} alt="Download" /> </a>
+              <a className="icon-containers" href="/downloads"><img className="icon" src={Download} alt="Download" /></a>
             </li>
             {/* <li className="mapLink btn-container">
               <a className="icon-containers" href="/map"> <img className="icon" src="https://icon-library.com/images/white-map-icon/white-map-icon-16.jpg" alt="Map" /> </a>
             </li> */}
             <li className="btn-container">
-              <a className="icon-containers" href="/status"> <img className="icon" src={StatusIco} alt="Status" /> </a>
+              <a className="icon-containers" href="/status"> <img className="icon" src={StatusIco} alt="Status" /></a>
             </li>
           </ul>
         </div>
@@ -37,7 +38,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Information />} />
               <Route path="/downloads" element={<Downloads />} />
-              {/* <Route path="/map" element={<Map />} /> */}
+              <Route path="/map" element={<Map />} />
               <Route path="/status" element={<Status />} />
               <Route path="*" element={<Error />} />
             </Routes>
@@ -51,3 +52,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;

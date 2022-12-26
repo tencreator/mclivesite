@@ -10,7 +10,7 @@ export default class Status extends React.Component {
     }
 
         async componentDidMount() {
-        const url = 'https://api.mcsrvstat.us/2/134.255.231.183:25629';
+        const url = 'https://api.mcsrvstat.us/2/max.berrybyte.net:25584';
         const response = await fetch(url);
         const data = await response.json();
         this.setState({serverInformation: data, loading:false, motd:data.motd.html})

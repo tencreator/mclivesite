@@ -3,20 +3,13 @@ body {
     margin: 8px;
     background-color: rgb(26, 29, 48);
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
     color:white;
     text-align: center;
-}
-
-footer {
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    transform: translate(-50%,0%);
-    text-align: center;
-    margin: 0.5em 0em;
 }
 
 .icon-containers {

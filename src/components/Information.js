@@ -16,6 +16,9 @@ export default function Information() {
         <span>
           Now they plan to open it up to anyone that is willing to be whitelisted and under go a interview<br /> 
           and trial period  
+        </span> <br /> <br />
+        <span>
+          Currently under ownership of TenCreator#2627 and Rose 🌹#1038 due to the recent release of TipsyTheCat#5622
         </span>
       </div>
     </div>

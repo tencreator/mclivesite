@@ -9,15 +9,13 @@ export default class Status extends React.Component {
         motd: null,
     }
 
-        async componentDidMount() {
-        const url = 'https://api.mcsrvstat.us/2/max.berrybyte.net:25584';
+    async componentDidMount() {
+        const url = 'https://api.mcsrvstat.us/2/play.mclive.xyz';
         const response = await fetch(url);
         const data = await response.json();
         this.setState({serverInformation: data, loading:false, motd:data.motd.html})
         console.log(this.state.serverInformation)
     }
-    
-
     
     render() {
         return <div>

@@ -19,6 +19,9 @@ export default function Information() {
         </span> <br /> <br />
         <span>
           Currently under ownership of TenCreator#2627 and Rose 🌹#1038 due to the recent release of TipsyTheCat#5622
+        </span> <br /> <br />
+        <span>
+          <a href="https://discord.gg/8Tq2GZr24c">Join the discord here!</a>
         </span>
       </div>
     </div>

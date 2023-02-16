@@ -25,9 +25,9 @@ function App() {
             <li className="btn-container">
               <a className="icon-containers" href="/downloads"><img className="icon" src={Download} alt="Download" /></a>
             </li>
-            {/* <li className="mapLink btn-container">
+            <li className="mapLink btn-container">
               <a className="icon-containers" href="/map"> <img className="icon" src="https://icon-library.com/images/white-map-icon/white-map-icon-16.jpg" alt="Map" /> </a>
-            </li> */}
+            </li>
             <li className="btn-container">
               <a className="icon-containers" href="/status"> <img className="icon" src={StatusIco} alt="Status" /></a>
             </li>
@@ -45,10 +45,6 @@ function App() {
           </Router>
         </div>
       </div>
-      <footer>
-        <a href="https://discord.gg/8Tq2GZr24c">Discord</a>
-        <br/>made by TenCreator#2627 
-      </footer>
     </>
   );
 }

@@ -21,6 +21,9 @@ export default function Information() {
           Currently under ownership of TenCreator#2627 and Rose 🌹#1038 due to the recent release of TipsyTheCat#5622
         </span> <br /> <br />
         <span>
+          TipsyTheCat#5622 had rejoined the team!
+        </span> <br /> <br />
+        <span>
           <a href="https://discord.gg/8Tq2GZr24c">Join the discord here!</a>
         </span>
       </div>
